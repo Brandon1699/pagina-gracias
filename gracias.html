@@ -10,18 +10,23 @@
             margin: 0;
             padding: 0;
             text-align: center;
-            background: linear-gradient(135deg, #061926, #8dd7ed, #b8a8ef);
-            background-size: 200% 200%;
-            animation: gradientAnimation 10s ease infinite;
+            background: linear-gradient(135deg, #061926, #8dd7ed, #b8a8ef, #061926, #8dd7ed, #b8a8ef);
+            background-size: 400% 400%;
+            animation: lavaLamp 20s ease infinite;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
-        @keyframes gradientAnimation {
+        @keyframes lavaLamp {
             0% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
         .header {
-            padding: 50px 20px;
-            margin-bottom: 40px;
+            padding: 20px;
+            margin-bottom: 20px;
         }
         .logo img {
             width: 180px;
@@ -31,12 +36,12 @@
             transform: scale(1.05);
         }
         .message {
-            margin: 0 auto;
             max-width: 600px;
             padding: 30px;
             background-color: white;
             border-radius: 15px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            margin: 20px;
         }
         .message h1 {
             font-size: 32px;
@@ -53,46 +58,6 @@
         .highlight {
             color: #b8a8ef;
             font-weight: bold;
-        }
-        .socials {
-            margin: 40px 0;
-            padding: 20px 0;
-            background-color: rgba(6, 25, 38, 0.8);
-            border-radius: 10px;
-        }
-        .socials a {
-            margin: 0 15px;
-            display: inline-block;
-            transition: transform 0.3s ease;
-        }
-        .socials a:hover {
-            transform: translateY(-5px);
-        }
-        .socials img {
-            height: 30px;
-        }
-        .footer {
-            background-color: rgba(6, 25, 38, 0.9);
-            padding: 25px 15px;
-            font-size: 14px;
-            color: white;
-            border-radius: 10px 10px 0 0;
-        }
-        .footer p {
-            line-height: 1.5;
-            font-size: 14px;
-            margin: 5px 0;
-        }
-        .store-badges {
-            margin: 20px 0;
-        }
-        .store-badges img {
-            height: 40px;
-            margin: 10px;
-            transition: transform 0.3s ease;
-        }
-        .store-badges img:hover {
-            transform: scale(1.1);
         }
         .cta-text {
             font-size: 20px;
